@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="kartu">
+    <h1>Kalkulator BMI</h1>
+    <p class="sub">Hitung indeks massa tubuhmu dalam hitungan detik.</p>
+
+    <label for="berat">Berat badan (kg)</label>
+    <input type="number" id="berat" placeholder="contoh: 60" min="1">
+
+    <label for="tinggi">Tinggi badan (cm)</label>
+    <input type="number" id="tinggi" placeholder="contoh: 165" min="1">
+
+    <p id="error" class="error"></p>
+
+    <div class="tombol-area">
+      <button id="btnHitung">Hitung BMI</button>
+      <button id="btnReset" class="abu">Reset</button>
+    </div>
+
+    <section id="hasil" class="hasil sembunyi">
+      <p class="label-kecil">BMI kamu</p>
+      <p id="angkaBmi" class="angka">0</p>
+      <p id="kategori" class="kategori">-</p>
+
+      <div class="bar">
+        <div class="seg kurus"></div>
+        <div class="seg normal"></div>
+        <div class="seg lebih"></div>
+        <div class="seg obes"></div>
+        <div id="penanda" class="penanda"></div>
+      </div>
+      <div class="bar-label">
+        <span>Kurus</span>
+        <span>Normal</span>
+        <span>Berlebih</span>
+        <span>Obesitas</span>
+      </div>
+
+      <p id="saran" class="saran"></p>
+    </section>
+
+    <p class="catatan">Ini cuma perkiraan umum, bukan pengganti saran dokter.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

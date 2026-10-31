@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ece8fb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #231f3a;
+}
+
+.kartu {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 26px;
+  border-radius: 16px;
+  border: 2px solid #5b4bc4;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #5b4bc4;
+}
+
+.sub {
+  font-size: 14px;
+  color: #6a6580;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 11px 12px;
+  font-family: inherit;
+  font-size: 15px;
+  border: 1.5px solid #cdc8e6;
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5b4bc4;
+  box-shadow: 0 0 0 3px #d9d3f5;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 13px;
+  min-height: 18px;
+  margin-top: 10px;
+}
+
+.tombol-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: #5b4bc4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4638a3;
+}
+
+button.abu {
+  background-color: #e7e4f2;
+  color: #231f3a;
+}
+
+button.abu:hover {
+  background-color: #d3cfe6;
+}
+
+.sembunyi {
+  display: none;
+}
+
+.hasil {
+  margin-top: 22px;
+  padding: 18px 16px;
+  background-color: #f6f4fd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.label-kecil {
+  font-size: 13px;
+  color: #6a6580;
+}
+
+.angka {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.kategori {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+/* warna tiap kategori */
+.kategori.kurus { background-color: #3a8fd9; }
+.kategori.normal { background-color: #2e9e6b; }
+.kategori.lebih { background-color: #e0911f; }
+.kategori.obes { background-color: #d64545; }
+
+.bar {
+  position: relative;
+  display: flex;
+  height: 12px;
+  margin-top: 22px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.seg { height: 100%; }
+.seg.kurus { background-color: #3a8fd9; flex: 18.5; }
+.seg.normal { background-color: #2e9e6b; flex: 6.5; }
+.seg.lebih { background-color: #e0911f; flex: 5; }
+.seg.obes { background-color: #d64545; flex: 10; }
+
+.penanda {
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #231f3a;
+  border: 1px solid white;
+  transform: translateX(-50%);
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #6a6580;
+}
+
+.saran {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.catatan {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #8a859d;
+  text-align: center;
+}
